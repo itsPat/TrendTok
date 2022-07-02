@@ -11,6 +11,13 @@
 		185B45782870923300A093B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B45772870923300A093B1 /* ContentView.swift */; };
 		185B457A2870923500A093B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185B45792870923500A093B1 /* Assets.xcassets */; };
 		185B457D2870923500A093B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185B457C2870923500A093B1 /* Preview Assets.xcassets */; };
+		185B45842870924600A093B1 /* TrendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B45832870924600A093B1 /* TrendManager.swift */; };
+		185B458828709B9C00A093B1 /* IndustryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B458728709B9C00A093B1 /* IndustryInfo.swift */; };
+		185B458A28709BAD00A093B1 /* TrendManager+Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B458928709BAD00A093B1 /* TrendManager+Routes.swift */; };
+		185B458C28709BF500A093B1 /* TrendPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B458B28709BF500A093B1 /* TrendPoint.swift */; };
+		185B458E28709C0F00A093B1 /* TrendingHashtag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B458D28709C0F00A093B1 /* TrendingHashtag.swift */; };
+		185B459028709C2D00A093B1 /* TrendManager+Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B458F28709C2D00A093B1 /* TrendManager+Responses.swift */; };
+		185B459228709D9500A093B1 /* TrendingSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B459128709D9500A093B1 /* TrendingSound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		185B45772870923300A093B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		185B45792870923500A093B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185B457C2870923500A093B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		185B45832870924600A093B1 /* TrendManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendManager.swift; sourceTree = "<group>"; };
+		185B458728709B9C00A093B1 /* IndustryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndustryInfo.swift; sourceTree = "<group>"; };
+		185B458928709BAD00A093B1 /* TrendManager+Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrendManager+Routes.swift"; sourceTree = "<group>"; };
+		185B458B28709BF500A093B1 /* TrendPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendPoint.swift; sourceTree = "<group>"; };
+		185B458D28709C0F00A093B1 /* TrendingHashtag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingHashtag.swift; sourceTree = "<group>"; };
+		185B458F28709C2D00A093B1 /* TrendManager+Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrendManager+Responses.swift"; sourceTree = "<group>"; };
+		185B459128709D9500A093B1 /* TrendingSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingSound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 		185B45742870923300A093B1 /* TrendTok */ = {
 			isa = PBXGroup;
 			children = (
+				185B458528709B8C00A093B1 /* TrendManager */,
 				185B45752870923300A093B1 /* TrendTokApp.swift */,
 				185B45772870923300A093B1 /* ContentView.swift */,
 				185B45792870923500A093B1 /* Assets.xcassets */,
@@ -65,6 +80,28 @@
 				185B457C2870923500A093B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		185B458528709B8C00A093B1 /* TrendManager */ = {
+			isa = PBXGroup;
+			children = (
+				185B458628709B9400A093B1 /* Models */,
+				185B45832870924600A093B1 /* TrendManager.swift */,
+			);
+			name = TrendManager;
+			sourceTree = "<group>";
+		};
+		185B458628709B9400A093B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				185B458928709BAD00A093B1 /* TrendManager+Routes.swift */,
+				185B458F28709C2D00A093B1 /* TrendManager+Responses.swift */,
+				185B458728709B9C00A093B1 /* IndustryInfo.swift */,
+				185B458B28709BF500A093B1 /* TrendPoint.swift */,
+				185B458D28709C0F00A093B1 /* TrendingHashtag.swift */,
+				185B459128709D9500A093B1 /* TrendingSound.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +174,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185B459228709D9500A093B1 /* TrendingSound.swift in Sources */,
+				185B458A28709BAD00A093B1 /* TrendManager+Routes.swift in Sources */,
+				185B45842870924600A093B1 /* TrendManager.swift in Sources */,
+				185B458C28709BF500A093B1 /* TrendPoint.swift in Sources */,
 				185B45782870923300A093B1 /* ContentView.swift in Sources */,
+				185B459028709C2D00A093B1 /* TrendManager+Responses.swift in Sources */,
 				185B45762870923300A093B1 /* TrendTokApp.swift in Sources */,
+				185B458E28709C0F00A093B1 /* TrendingHashtag.swift in Sources */,
+				185B458828709B9C00A093B1 /* IndustryInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
