@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftuicharts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mecid/SwiftUICharts.git",
+      "state" : {
+        "revision" : "44aa897cc7649ac1c9fe5c512c39780237a8db1f",
+        "version" : "0.8.0"
+      }
+    }
+  ],
+  "version" : 2
+}

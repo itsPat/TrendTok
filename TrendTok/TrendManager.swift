@@ -77,6 +77,9 @@ final class TrendManager: NSObject, ObservableObject {
                             
                             if route.page == 1 {
                                 self?.trendingHashtags = trendingHashtags
+                                trendingHashtags.forEach {
+                                    print("\($0.name)")
+                                }
                             } else {
                                 self?.trendingHashtags += trendingHashtags
                             }
@@ -85,6 +88,9 @@ final class TrendManager: NSObject, ObservableObject {
                             
                             if route.page == 1 {
                                 self?.trendingSounds = trendingSounds
+                                trendingSounds.forEach {
+                                    print("\($0.title)")
+                                }
                             } else {
                                 self?.trendingSounds += trendingSounds
                             }

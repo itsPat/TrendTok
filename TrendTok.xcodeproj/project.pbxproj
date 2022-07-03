@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1827D8792871BCB8001F8D2C /* HashtagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827D8782871BCB8001F8D2C /* HashtagsView.swift */; };
+		1827D87B2871BCCD001F8D2C /* SoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827D87A2871BCCD001F8D2C /* SoundsView.swift */; };
+		1827D8812871C179001F8D2C /* TrendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827D8802871C179001F8D2C /* TrendView.swift */; };
+		1827D8842871C8A2001F8D2C /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1827D8832871C8A2001F8D2C /* SwiftUICharts */; };
 		185B45762870923300A093B1 /* TrendTokApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B45752870923300A093B1 /* TrendTokApp.swift */; };
 		185B45782870923300A093B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B45772870923300A093B1 /* ContentView.swift */; };
 		185B457A2870923500A093B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185B45792870923500A093B1 /* Assets.xcassets */; };
@@ -21,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1827D8782871BCB8001F8D2C /* HashtagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagsView.swift; sourceTree = "<group>"; };
+		1827D87A2871BCCD001F8D2C /* SoundsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsView.swift; sourceTree = "<group>"; };
+		1827D8802871C179001F8D2C /* TrendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendView.swift; sourceTree = "<group>"; };
 		185B45722870923300A093B1 /* TrendTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185B45752870923300A093B1 /* TrendTokApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTokApp.swift; sourceTree = "<group>"; };
 		185B45772870923300A093B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,12 +47,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1827D8842871C8A2001F8D2C /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1827D8772871BCA2001F8D2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				185B45772870923300A093B1 /* ContentView.swift */,
+				1827D8782871BCB8001F8D2C /* HashtagsView.swift */,
+				1827D87A2871BCCD001F8D2C /* SoundsView.swift */,
+				1827D8802871C179001F8D2C /* TrendView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		185B45692870923300A093B1 = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +86,6 @@
 			children = (
 				185B458528709B8C00A093B1 /* TrendManager */,
 				185B45752870923300A093B1 /* TrendTokApp.swift */,
-				185B45772870923300A093B1 /* ContentView.swift */,
 				185B45792870923500A093B1 /* Assets.xcassets */,
 				185B457B2870923500A093B1 /* Preview Content */,
 			);
@@ -86,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				185B458628709B9400A093B1 /* Models */,
+				1827D8772871BCA2001F8D2C /* Views */,
 				185B45832870924600A093B1 /* TrendManager.swift */,
 			);
 			name = TrendManager;
@@ -120,6 +139,9 @@
 			dependencies = (
 			);
 			name = TrendTok;
+			packageProductDependencies = (
+				1827D8832871C8A2001F8D2C /* SwiftUICharts */,
+			);
 			productName = TrendTok;
 			productReference = 185B45722870923300A093B1 /* TrendTok.app */;
 			productType = "com.apple.product-type.application";
@@ -148,6 +170,9 @@
 				Base,
 			);
 			mainGroup = 185B45692870923300A093B1;
+			packageReferences = (
+				1827D8822871C8A2001F8D2C /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+			);
 			productRefGroup = 185B45732870923300A093B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -177,11 +202,14 @@
 				185B459228709D9500A093B1 /* TrendingSound.swift in Sources */,
 				185B458A28709BAD00A093B1 /* TrendManager+Routes.swift in Sources */,
 				185B45842870924600A093B1 /* TrendManager.swift in Sources */,
+				1827D8792871BCB8001F8D2C /* HashtagsView.swift in Sources */,
 				185B458C28709BF500A093B1 /* TrendPoint.swift in Sources */,
 				185B45782870923300A093B1 /* ContentView.swift in Sources */,
 				185B459028709C2D00A093B1 /* TrendManager+Responses.swift in Sources */,
 				185B45762870923300A093B1 /* TrendTokApp.swift in Sources */,
 				185B458E28709C0F00A093B1 /* TrendingHashtag.swift in Sources */,
+				1827D87B2871BCCD001F8D2C /* SoundsView.swift in Sources */,
+				1827D8812871C179001F8D2C /* TrendView.swift in Sources */,
 				185B458828709B9C00A093B1 /* IndustryInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +347,8 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,6 +378,8 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +415,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1827D8822871C8A2001F8D2C /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mecid/SwiftUICharts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1827D8832871C8A2001F8D2C /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1827D8822871C8A2001F8D2C /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 185B456A2870923300A093B1 /* Project object */;
 }

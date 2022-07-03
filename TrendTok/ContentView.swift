@@ -8,32 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @StateObject private var trendManager = TrendManager.shared
-    
     var body: some View {
-        VStack {
-            if trendManager.trendingHashtags.isEmpty {
-                ProgressView()
-            } else {
-                ScrollView(.vertical, showsIndicators: false) {
-                    LazyVStack {
-                        ForEach(trendManager.trendingHashtags, id: \.id) { hashtag in
-                            Text(hashtag.name)
-                        }
-                    }
+        TabView {
+            HashtagsView()
+                .tabItem {
+                    Label("Hashtags", systemImage: "number")
                 }
-            }
-        }
-        .onAppear {
-            trendManager.fetch(
-                .hashtag(
-                    page: 1,
-                    country: .us,
-                    period: .last7,
-                    industry: nil
-                )
-            )
+            SoundsView()
+                .tabItem {
+                    Label("Sounds", systemImage: "waveform")
+                }
         }
     }
 }
